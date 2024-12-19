@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Running Ticker -->
+    <div id="crypto-ticker">
+        <marquee id="ticker" behavior="scroll" direction="left"></marquee>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Chart Section -->
+        <div id="chart-container">
+            <canvas id="solanaChart"></canvas>
+        </div>
+
+        <!-- Narratives Section -->
+        <div id="narratives">
+            <h2>Today's Narratives:</h2>
+            <p>Cult, AI, Terminal, Quant</p>
+        </div>
+    </div>
+
+    <div id="xcom-container">
+        <a href="https://x.com/AlphaAssist_Ai" id="xcom-button">X.COM</a>
+    </div>
+    
+    <!-- ChatGPT Assistant -->
+    <div id="chatbot">
+        <div id="chatbot-header">Alpha Assistant</div>
+        <div id="chatbot-messages"></div>
+        <textarea id="chatbot-input" placeholder="Ask about cryptocurrency..."></textarea>
+        <button id="chatbot-send">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
